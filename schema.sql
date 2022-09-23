@@ -39,3 +39,8 @@ CREATE TABLE vets (
     PRIMARY KEY(id)
 );
 
+CREATE TABLE specializations (
+    species_id INTEGER REFERENCES species(id),
+    vet_id INTEGER REFERENCES vets(id),
+    PRIMARY KEY (species_id, vet_id)
+);
