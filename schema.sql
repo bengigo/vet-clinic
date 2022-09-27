@@ -52,3 +52,5 @@ CREATE TABLE visits (
     PRIMARY KEY (animal_id, vet_id)
 );
 
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+ALTER TABLE owners ALTER COLUMN age DROP NOT NULL;
